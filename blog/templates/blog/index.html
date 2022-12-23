@@ -1,0 +1,56 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %} EdgeRunners {% endblock title %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock css_files %}
+
+{%block content %}
+
+<header id="main-navigation">
+  <h1><a href="">EdgeRunners</a></h1>
+  <nav>
+    <a href="">All Posts</a>
+  </nav>
+</header>
+<section id="welcome">
+  <header>
+    <img src="{% static 'blog/images/cyber_punk.jpg' %}" alt="Shogun - The Author of This Blog" />
+    <h2>SHOGUN'S BLOG</h2>
+  </header>
+  <p>Hi, I am Shogun and I am an EdgeRunner!</p>
+</section>
+<section id="latest-posts">
+  <h2>My Latest Thoughts</h2>
+  <ul>
+    <li>
+      <article class="post">
+        <a href="">
+          <img src="{% static 'blog/images/cyber_cover.jpeg' %}" alt="Cyber City" />
+          <div class="post__content">
+            <h3>Cyber Roads</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur corporis rerum commodi esse ut, sequi ipsa obcaecati
+              accusamus enim amet doloremque debitis quas dicta inventore fuga
+              cupiditate ullam quam consequatur.
+            </p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What I Do</h2>
+  <p>I am an EdgeRunner and I Explore the Cyber Space</p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit
+    quod dicta nihil sit numquam fugiat architecto eius aut deleniti?
+  </p>
+</section>
+
+{% endblock content %}
